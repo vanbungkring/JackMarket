@@ -14,6 +14,8 @@
 		0CA3855F1ACAEB070013534A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3855E1ACAEB070013534A /* Images.xcassets */; };
 		0CA385621ACAEB070013534A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA385601ACAEB070013534A /* LaunchScreen.xib */; };
 		0CA3856E1ACAEB070013534A /* PasarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3856D1ACAEB070013534A /* PasarTests.m */; };
+		0CB3ABC91ACBB00500749907 /* MarketList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB3ABC81ACBB00500749907 /* MarketList.m */; };
+		0CB3ABD11ACBC21300749907 /* RealmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB3ABD01ACBC21300749907 /* RealmManager.m */; };
 		85B2FF67C4A0D61E345C811D /* libPods-Pasar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A120A0E9B1E6264FF7E2CF /* libPods-Pasar.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,10 @@
 		0CA385671ACAEB070013534A /* PasarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA3856C1ACAEB070013534A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CA3856D1ACAEB070013534A /* PasarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PasarTests.m; sourceTree = "<group>"; };
+		0CB3ABC71ACBB00500749907 /* MarketList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketList.h; sourceTree = "<group>"; };
+		0CB3ABC81ACBB00500749907 /* MarketList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketList.m; sourceTree = "<group>"; };
+		0CB3ABCF1ACBC21300749907 /* RealmManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmManager.h; sourceTree = "<group>"; };
+		0CB3ABD01ACBC21300749907 /* RealmManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmManager.m; sourceTree = "<group>"; };
 		76A120A0E9B1E6264FF7E2CF /* libPods-Pasar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pasar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C728FF05601D6EBDFC038C /* Pods-Pasar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pasar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pasar/Pods-Pasar.release.xcconfig"; sourceTree = "<group>"; };
 		CC55A74B84E79C11D415EBE3 /* Pods-Pasar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pasar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pasar/Pods-Pasar.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 		0CA385501ACAEB070013534A /* Pasar */ = {
 			isa = PBXGroup;
 			children = (
+				0CB3ABCA1ACBC10700749907 /* API */,
 				0CB3ABC51ACBAA2A00749907 /* Storyboard */,
 				0CA3857A1ACB093D0013534A /* Categories */,
 				0CA385791ACB09320013534A /* Helper */,
@@ -133,6 +140,8 @@
 		0CA385771ACB09280013534A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0CB3ABCE1ACBC1F400749907 /* Market */,
+				0CB3ABCD1ACBC1E600749907 /* Manager */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -172,6 +181,47 @@
 			children = (
 			);
 			name = IB;
+			sourceTree = "<group>";
+		};
+		0CB3ABCA1ACBC10700749907 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0CB3ABCC1ACBC11200749907 /* New Group */,
+				0CB3ABCB1ACBC10D00749907 /* Manager */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		0CB3ABCB1ACBC10D00749907 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		0CB3ABCC1ACBC11200749907 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		0CB3ABCD1ACBC1E600749907 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0CB3ABCF1ACBC21300749907 /* RealmManager.h */,
+				0CB3ABD01ACBC21300749907 /* RealmManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		0CB3ABCE1ACBC1F400749907 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				0CB3ABC71ACBB00500749907 /* MarketList.h */,
+				0CB3ABC81ACBB00500749907 /* MarketList.m */,
+			);
+			name = Market;
 			sourceTree = "<group>";
 		};
 		CB71B0A1BFAC9B181F1C0182 /* Frameworks */ = {
@@ -330,6 +380,8 @@
 				0CA3855A1ACAEB070013534A /* ViewController.m in Sources */,
 				0CA385571ACAEB070013534A /* AppDelegate.m in Sources */,
 				0CA385541ACAEB070013534A /* main.m in Sources */,
+				0CB3ABD11ACBC21300749907 /* RealmManager.m in Sources */,
+				0CB3ABC91ACBB00500749907 /* MarketList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
