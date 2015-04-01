@@ -9,6 +9,13 @@
 #import "RLMObject.h"
 
 @interface MarketList : RLMObject
-
-
+@property NSInteger id;
+@property NSDate *createdAt;
+@property NSDate *updatedAt;
+@property NSString *name;
+@property NSString *address;
+@property NSString *city;
+@property NSString *postalCode;
+@property NSString *phone;
+@property NSString *profile;
 @end

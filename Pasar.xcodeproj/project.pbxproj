@@ -16,6 +16,9 @@
 		0CA3856E1ACAEB070013534A /* PasarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3856D1ACAEB070013534A /* PasarTests.m */; };
 		0CB3ABC91ACBB00500749907 /* MarketList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB3ABC81ACBB00500749907 /* MarketList.m */; };
 		0CB3ABD11ACBC21300749907 /* RealmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB3ABD01ACBC21300749907 /* RealmManager.m */; };
+		0CB3ABD41ACBEED500749907 /* ItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB3ABD31ACBEED500749907 /* ItemList.m */; };
+		0CB3ABD81ACBF73500749907 /* Ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB3ABD71ACBF73500749907 /* Ipad.storyboard */; };
+		0CBC525E1ACC32EF00766974 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC525D1ACC32EF00766974 /* APIManager.m */; };
 		85B2FF67C4A0D61E345C811D /* libPods-Pasar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A120A0E9B1E6264FF7E2CF /* libPods-Pasar.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,12 @@
 		0CB3ABC81ACBB00500749907 /* MarketList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketList.m; sourceTree = "<group>"; };
 		0CB3ABCF1ACBC21300749907 /* RealmManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmManager.h; sourceTree = "<group>"; };
 		0CB3ABD01ACBC21300749907 /* RealmManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmManager.m; sourceTree = "<group>"; };
+		0CB3ABD21ACBEED500749907 /* ItemList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemList.h; sourceTree = "<group>"; };
+		0CB3ABD31ACBEED500749907 /* ItemList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemList.m; sourceTree = "<group>"; };
+		0CB3ABD71ACBF73500749907 /* Ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ipad.storyboard; sourceTree = "<group>"; };
+		0CBC525A1ACC321C00766974 /* APIManagerMarketDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManagerMarketDelegate.h; sourceTree = "<group>"; };
+		0CBC525C1ACC32EF00766974 /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		0CBC525D1ACC32EF00766974 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		76A120A0E9B1E6264FF7E2CF /* libPods-Pasar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pasar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C728FF05601D6EBDFC038C /* Pods-Pasar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pasar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pasar/Pods-Pasar.release.xcconfig"; sourceTree = "<group>"; };
 		CC55A74B84E79C11D415EBE3 /* Pods-Pasar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pasar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pasar/Pods-Pasar.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,8 +179,8 @@
 		0CB3ABC51ACBAA2A00749907 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				0CB3ABC61ACBAB5400749907 /* IB */,
-				0CA3855B1ACAEB070013534A /* Main.storyboard */,
+				0CB3ABD61ACBF71F00749907 /* Ipad Storyboard */,
+				0CB3ABD51ACBF69300749907 /* Iphone Storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -186,7 +195,7 @@
 		0CB3ABCA1ACBC10700749907 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				0CB3ABCC1ACBC11200749907 /* New Group */,
+				0CB3ABCC1ACBC11200749907 /* Delegate */,
 				0CB3ABCB1ACBC10D00749907 /* Manager */,
 			);
 			name = API;
@@ -195,15 +204,18 @@
 		0CB3ABCB1ACBC10D00749907 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				0CBC525C1ACC32EF00766974 /* APIManager.h */,
+				0CBC525D1ACC32EF00766974 /* APIManager.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
 		};
-		0CB3ABCC1ACBC11200749907 /* New Group */ = {
+		0CB3ABCC1ACBC11200749907 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
+				0CBC525A1ACC321C00766974 /* APIManagerMarketDelegate.h */,
 			);
-			name = "New Group";
+			name = Delegate;
 			sourceTree = "<group>";
 		};
 		0CB3ABCD1ACBC1E600749907 /* Manager */ = {
@@ -220,8 +232,27 @@
 			children = (
 				0CB3ABC71ACBB00500749907 /* MarketList.h */,
 				0CB3ABC81ACBB00500749907 /* MarketList.m */,
+				0CB3ABD21ACBEED500749907 /* ItemList.h */,
+				0CB3ABD31ACBEED500749907 /* ItemList.m */,
 			);
 			name = Market;
+			sourceTree = "<group>";
+		};
+		0CB3ABD51ACBF69300749907 /* Iphone Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0CB3ABC61ACBAB5400749907 /* IB */,
+				0CA3855B1ACAEB070013534A /* Main.storyboard */,
+			);
+			name = "Iphone Storyboard";
+			sourceTree = "<group>";
+		};
+		0CB3ABD61ACBF71F00749907 /* Ipad Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0CB3ABD71ACBF73500749907 /* Ipad.storyboard */,
+			);
+			name = "Ipad Storyboard";
 			sourceTree = "<group>";
 		};
 		CB71B0A1BFAC9B181F1C0182 /* Frameworks */ = {
@@ -324,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB3ABD81ACBF73500749907 /* Ipad.storyboard in Resources */,
 				0CA3855D1ACAEB070013534A /* Main.storyboard in Resources */,
 				0CA385621ACAEB070013534A /* LaunchScreen.xib in Resources */,
 				0CA3855F1ACAEB070013534A /* Images.xcassets in Resources */,
@@ -381,6 +413,8 @@
 				0CA385571ACAEB070013534A /* AppDelegate.m in Sources */,
 				0CA385541ACAEB070013534A /* main.m in Sources */,
 				0CB3ABD11ACBC21300749907 /* RealmManager.m in Sources */,
+				0CBC525E1ACC32EF00766974 /* APIManager.m in Sources */,
+				0CB3ABD41ACBEED500749907 /* ItemList.m in Sources */,
 				0CB3ABC91ACBB00500749907 /* MarketList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

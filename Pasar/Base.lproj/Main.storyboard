@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="194" y="323"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Pasar-->
         <scene sceneID="DVy-QY-dA0">
             <objects>
                 <tableViewController id="5mU-uB-fa3" sceneMemberID="viewController">
@@ -40,7 +40,7 @@
                             <outlet property="delegate" destination="5mU-uB-fa3" id="MSO-L3-zCN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="qEF-Jj-6GE"/>
+                    <navigationItem key="navigationItem" title="Pasar" id="qEF-Jj-6GE"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqC-Ki-8oD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,6 +54,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="5mU-uB-fa3" kind="relationship" relationship="rootViewController" id="VAl-TX-vSA"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4HT-fZ-8OF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
